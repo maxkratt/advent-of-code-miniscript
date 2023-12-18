@@ -1,9 +1,3 @@
-import "stringUtil"
-import "mapUtil"
-import "listUtil"
-import "mathUtil"
-import "aoc"
-
 sourceDir = file.parent(_sourceFile) + "/"
 if 1 then fname = sourceDir + "input.txt" else fname = sourceDir + "example.txt"
 lines = file.readLines(fname)
@@ -67,5 +61,5 @@ for l in lines.indexes
 	end for
 end for
 
-print "gearRatios = " + gearRatios
+// print "gearRatios = " + gearRatios
 print "total = " + gearRatios.sum

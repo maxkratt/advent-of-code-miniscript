@@ -1,9 +1,3 @@
-import "stringUtil"
-import "mapUtil"
-import "listUtil"
-import "mathUtil"
-import "aoc"
-
 sourceDir = file.parent(_sourceFile) + "/"
 if 1 then fname = sourceDir + "input.txt" else fname = sourceDir + "example.txt"
 lines = file.readLines(fname)
@@ -75,7 +69,6 @@ end for
 
 spaceSeperatedNumbers = spaceSeperatedNumbers.join("")
 spaceSeperatedNumbers = spaceSeperatedNumbers.split(" ")
-print spaceSeperatedNumbers
 total = 0
 for num in spaceSeperatedNumbers
 	total += num.val

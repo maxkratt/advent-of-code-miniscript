@@ -25,5 +25,4 @@ total = 0
 for answer in answers
     total += answer.val
 end for
-print answers
 print total
