@@ -451,7 +451,7 @@ end function
 globals.getExampleData = function(dayNum)
 	if dayNum == null then dayNum = file.curdir[8:].val
 	if dayNum == 0 then dayNum = input("Day number? ").val
-	url = "https://adventofcode.com/2022/day/" + dayNum
+	url = "https://adventofcode.com/2023/day/" + dayNum
 	data = http.get(url)
 	print "Read " + data.len + " bytes from " + url
 	sampleData = data.between("<pre><code>", "</code></pre>")
