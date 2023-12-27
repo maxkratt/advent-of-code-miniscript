@@ -1,9 +1,4 @@
-import "stringUtil"
-import "mapUtil"
-import "listUtil"
-import "mathUtil"
 import "aoc"
-import "myaoc"
 
 sourceDir = file.parent(_sourceFile) + "/"
 if 1 then fname = sourceDir + "input.txt" else fname = sourceDir + "example.txt"
@@ -13,6 +8,8 @@ if lines == null then
 	exit
 end if
 if not lines[-1] then lines.pop
+
+startTime = time
 
 // Function to convert decimal number
 // to binary using recursion
@@ -83,3 +80,4 @@ for line in lines
 	total += amountOfFitting
 end for
 print "Total: " + total
+print "Took " + (time - startTime) + " seconds."

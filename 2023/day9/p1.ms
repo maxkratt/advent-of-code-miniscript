@@ -1,9 +1,4 @@
-import "stringUtil"
-import "mapUtil"
-import "listUtil"
-import "mathUtil"
 import "aoc"
-import "myaoc"
 
 sourceDir = file.parent(_sourceFile) + "/"
 if 1 then fname = sourceDir + "input.txt" else fname = sourceDir + "example.txt"

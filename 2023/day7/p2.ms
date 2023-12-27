@@ -1,7 +1,3 @@
-import "stringUtil"
-import "mapUtil"
-import "listUtil"
-import "mathUtil"
 import "aoc"
 
 sourceDir = file.parent(_sourceFile) + "/"

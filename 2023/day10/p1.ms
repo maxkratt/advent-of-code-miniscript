@@ -1,9 +1,4 @@
 import "stringUtil"
-import "mapUtil"
-import "listUtil"
-import "mathUtil"
-import "aoc"
-import "myaoc"
 import "vector3"
 
 sourceDir = file.parent(_sourceFile) + "/"

@@ -1,9 +1,4 @@
-import "stringUtil"
-import "mapUtil"
-import "listUtil"
-import "mathUtil"
 import "aoc"
-import "myaoc"
 import "vector3"
 
 sourceDir = file.parent(_sourceFile) + "/"
@@ -14,6 +9,8 @@ if lines == null then
 	exit
 end if
 if not lines[-1] then lines.pop
+
+startTime = time
 
 findGalaxies = function(inputLines)
 	galaxies = []
@@ -109,3 +106,4 @@ for pair in pairs
 	end while
 end for
 print totalDistances
+print "Took " + (time - startTime) + " seconds."
